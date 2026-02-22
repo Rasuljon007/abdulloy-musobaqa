@@ -1,199 +1,435 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio |</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asosiy sahifa</title>
 
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#home">Bosh sahifa</a></li>
-            <li><a href="#about">Men haqimda</a></li>
-            <li><a href="#projects">Loyihalar</a></li>
-            <li><a href="#interests">Qiziqishlarim</a></li>
-            <!-- <li><a href="#family">Oilam</a></li> -->
-            <li><a href="#contact">Aloqa</a></li>
-       
-        </ul>
-            <a href="./home.html" class="btn-header">Orqaga <i class="fas fa-arrow-right"></i></a> 
-    </nav>
-
-    <section id="home" class="hero" >
-        <div  class="hero-content"data-aos="fade-right" data-aos-duration="2000">
-            <h1>Ishmuratov Abdullox</h1>
-            <h3>Boshlang'ich Frontend Dasturchi</h3>
-            <p>Men zamonaviy veb-saytlar yaratishni o'rganayotgan va har kuni yangi texnologiyalarni o'zlashtirishga intilayotgan dasturchiman.</p>
-            <a href="#contact" class="btn-main">Men bilan bog'lanish <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </section>
-
-    <section id="about" class="section-padding"data-aos="fade-right" data-aos-duration="2000">
-        <h2 class="section-title">Men haqimda</h2>
-        <div class="about-container">
-            <div class="about-img1">
-                <img class="about-img" src="./images/photo_2026-02-19_14-07-46.jpg" width="550px" alt="Profil">
-            </div>
-            <div class="about-text">
-                <p class="about-text">Salom! Men Frontend Development sohasida o'z yo'limni boshlagan yoshman. Hozirda HTML, CSS texnologiyalarini chuqur o'rganmoqdaman.
-
-Veb-saytlar yaratish meni juda qiziqtiradi va har bir yangi loyiha menga yangi ko'nikmalar beradi. Men har kuni o'z bilimlarimni oshirishga intilaman va kelajakda professional dasturchi bo'lishni maqsad qilganman.
-
-Yangi texnologiyalarni o'rganish va murakkab muammolarni yechish menga katta zavq bag'ishlaydi. Kodlash orqali o'z g'oyalarimni hayotga tatbiq etish imkoniyati meni doimo ilhomlantiradi.</p>
-                <div class="skills-flex">
-                    <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
-                    <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS</div>
-                    <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <section class="projects" id="projects"data-aos="fade-right" data-aos-duration="2000">
-    <h2 class="section-title">Mening Loyihalarim</h2>
-    <p class="section-subtitle">O'rganish jarayonida yaratgan loyihalarim</p>
-
-    <div class="projects-header">
-        <div class="project-card">
-            <div class="project-image">
-                <img  src="./images/Снимок экрана 2026-02-19 210715.png"  alt="Portfolio">
-            </div>
-            <div class="project-info">
-                <h3> <a  class="project-img" href="./home.html">Portfolio Web-sayt </a><span class="icon"></span></h3>
-                <p>Shaxsiy portfolio veb-sayti HTML, CSS yordamida yaratilgan. Responsive dizayn va zamonaviy animatsiyalar.</p>
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="#"><i class="fas fa-external-link-alt"></i> Ko'rish</a>
-                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-image">
-                <img src="./images/Снимок экрана 2026-02-19 211324.png" alt="To-Do List">
-            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <header class="header-head" data-aos="fade-right" data-aos-duration="2000">
+      <div class="container">
+        <div class="header-poragraph">
+          <div
+            class="header-title"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <h1 class="header-logo">ZENIX MARKET</h1>
+          </div>
+          <ul class="header-links">
             
-            <div class="project-info">
-               
-                <h3>To-Do List Ilovasi <span class="icon"></span></h3>
-                <p>Vazifalarni boshqarish uchun oddiy va qulay ilova. Local Storage yordamida ma'lumotlar saqlanadi.</p>
-                <div class="tags">
-                    <span>JavaScript</span>
-                    <span>CSS</span>
-                    <span>HTML</span>
-                </div>
-                <div class="project-links">
-                    <a href="#"><i class="fas fa-external-link-alt"></i> Ko'rish</a>
-                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-        </div>
+            <li class="header-link-1">
+              <a href="./index.html">Asosiy</a>
+            </li>
+            <li class="header-link-1">
+              <a href="./aboutus.html">Biz haqimizda</a>
+            </li>
+            <li class="header-link-1">
+              <a href="./services.html">Xizmatlar</a>
+            </li>
+            <li class="header-link-1">
+              <a href="./news.html">Yangiliklar</a>
+            </li>
+            <li class="header-link-1">
+              <a href="./contact.html">Aloqa</a>
+            </li>
 
-        <div class="project-card">
-            <div class="project-image">
-                <img src="./images/Снимок экрана 2026-02-19 211426.png" alt="Landing Page">
-            </div>
-            <div class="project-info">
-                <h3>Landing Page <span class="icon"></span></h3>
-                <p>Mahsulot uchun zamonaviy landing page. Gradient ranglar va smooth scroll effektlari bilan.</p>
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="#"><i class="fas fa-external-link-alt"></i> Ko'rish</a>
-                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
+            <button class="header-btn">Bog'lanish</button>
+          </ul>
         </div>
-    </div>
-
-    <div class="github-btn-container">
-        <a href="#" class="github-btn">
-            <i class="fab fa-github"></i> GitHub'da batafsil
-        </a>
-    </div>
-</section>
-<div id="interests" class="qiziqish-bolimi"data-aos="fade-right" data-aos-duration="2000">
-    <h1 class="sarlavha">Qiziqishlarim</h1>
-    <p class="tag-sarlavha">Mening asosiy qiziqishlarimdan biri - bu o'yinlar</p>
-
-    <div class="asosiy-qism">
-        <div class="rasm-blok">
-            <img class="asosiy-rasm" src="./images/Снимок экрана 2026-02-19 171732.png" width="400">
+      </div>
+    </header>
+    <main class="main-header">
+      <div class="main-poragraph">
+        <div class="main-title" data-aos="fade-right" data-aos-duration="2000">
+          <h4 class="main-h4">
+            Professional dizaynerlar tomonidan tasdiqlangan
+          </h4>
+          <h1 class="main-h1">
+            Mijozlarimiz uchun taqdim etadigan xizmatlarimiz.
+          </h1>
+          <p class="main-p">
+            Zenix Market — geymerlar uchun eksklyuziv markaz. <br />
+            Biz faqat litsenziyalangan o'yinlar va ishonchli xizmatlarni taklif
+            etamiz. <br />
+            O'yin tajribangizni bugun yangilang!
+          </p>
+          <button class="main-btn">Batafsil ma'lumot</button>
         </div>
-
-        <div class="matn-blok">
-            <p>O'yinlar mening hayotimda alohida o'rin tutadi. Ular nafaqat o'yin-kulgi uchun, balki ijodiy fikrlash va muammolarni yechish ko'nikmalarini rivojlantirish uchun ham juda foydali.</p>
-            
-            <p>Har bir o'yin - bu alohida dunyo, alohida mexanika va dizayn. O'yinlarni o'ynash jarayonida men ko'p narsalarni o'rganganman: strategik fikrlash, tezkor qaror qabul qilish va maqsadga erishish yo'llarini topish.</p>
-            
-            <p>Texnologiya va o'yin dizayni sohasiga qiziqishim meni dasturlashga olib keldi. Kelajakda o'zim ham o'yin yoki interaktiv veb-ilovalar yaratishni istayman.</p>
+        <div class="main-img" data-aos="fade-right" data-aos-duration="2000">
+          <img class="main-image" src="./images/4239781-200.png" alt="" />
         </div>
-    </div>
-</div>
- <footer class="footer-head">
-    <div class="footer-poragraph"data-aos="fade-right" data-aos-duration="2000">
-        <div class="footer-title">
-          <i class="fas fa-puzzle-piece" ></i>
-          <h2 class="footer-h1">O'yinlar</h2>
-          <p class="footer-p">  Vidoe o'yinlar meni doimo hayratda qoldiradi</p>
+      </div>
+    </main>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <footer class="footer-header">
+      <div class="container2">
+        <div
+          class="footer-title"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <h1 class="footer-h1">Ayni paytdagi ommabop o'yinlar</h1>
+          <button class="footer-btn"> KO'RISH</button>
         </div>
-         <div class="footer-title">
-        <i class="fas fa-lightbulb"></i>
-          <h2 class="footer-h1">Ijodkorlik</h2>
-          <p class="footer-p">  o'yinlar ijodiy fikrlashga undaydi </p>
+        <div class="footer-poragraph">
+          <div
+            class="footer-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img src="./images/Rectangle 23.svg" alt="" />
+            <h1 class="footer-h1">🐦‍🔥 40 Kuzatuvchi</h1>
+          </div>
+          <div
+            class="footer-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img src="./images/Rectangle 24.png" alt="" />
+            <h1 class="footer-h1">🐦‍🔥 40 Kuzatuvchi</h1>
+          </div>
+          <div
+            class="footer-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/Rectangle 25.png"
+              width="260"
+              height="277"
+              alt=""
+            />
+            <h1 class="footer-h1">🐦‍🔥 40 Kuzatuvchi</h1>
+          </div>
+          <div
+            class="footer-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img src="./images/Rectangle 26.png" alt="" />
+            <h1 class="footer-h1">🐦‍🔥 40 Kuzatuvchi</h1>
+          </div>
         </div>
-         <div class="footer-title">
-          <i class="fas fa-puzzle-piece" ></i>
-          <h2 class="footer-h1">Muommolarni yechish</h2>
-          <p class="footer-p"> O'yin mexanikalari mantiqiy fikrlashni rivojlantiradi </p>
-        </div>
-         <div class="footer-title">
-         <i class="fas fa-lightbulb"></i>
-          <h2 class="footer-h1">O'yin dizayni</h2>
-          <p class="footer-p"> O'yinlar qanday yaratilishini o'rganish</p>
-        </div>
-    </div>
- </footer>
-    <section id="contact" class="section-padding">
-        <div class="contact-box"data-aos="fade-right" data-aos-duration="2000">
-            <h2>Men bilan bog'lanish</h2>
-            <form>
-                <input type="text" placeholder="Ismingizni kiriting" required>
-                <input type="email" placeholder="Emailingiz@example.com" required>
-                <textarea placeholder="Xabaringizni yozing..." rows="5"></textarea>
-                <button type="submit" class="btn-submit">Yuborish <i class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-telegram"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-        <p>&copy; 2026 Sizning Ismingiz. Barcha huquqlar himoyalangan.</p>
+      </div>
     </footer>
-
-</body>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <article class="article-header">
+      <h1 class="article-h1" data-aos="fade-right" data-aos-duration="2000">
+        Biz sizning o'yin dunyosidagi hamkoringizga <br />
+        aylanamiz.
+      </h1>
+      <div class="container2">
+        <div class="article-poragraph">
+          <div
+            class="article-title"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <h1 class="article-h2">"Sizning ishonchli o'yin hamkoringiz"</h1>
+            <p class="article-p">
+              Kashf qiling, sotib oling va o‘ynang. Biz dunyoning eng ommabop
+              o‘yinlarini sizga taqdim etamiz. <br />
+              Kechikishlarsiz, qiyinchiliklarsiz — shunchaki sof o‘yin zavqi.
+            </p>
+            <div
+              class="article-logo"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <img src="./images/unreal 1.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="article-img"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img class="article-img" src="./images/Rectangle 4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </article>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="main2-header">
+      <div class="container2">
+        <div class="main2-title" data-aos="fade-right" data-aos-duration="2000">
+          <h1 class="main2-h1">
+            Zamonaviy o‘yin sanoati uchun <br />keng qamrovli xizmatlar.
+          </h1>
+          <p>
+            Biz PK, Mobil va Konsol o'yinlarini ishlab chiqish, shuningdek,
+            zamonaviy <br />
+            3D modellashtirish va AR/VR dizayniga ixtisoslashganmiz. <br />
+            Keling, birgalikda ajoyib loyihalar yarataylik.
+          </p>
+        </div>
+        <div class="main2-poragraph">
+          <div
+            class="main2-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/Group 48.svg"
+              width="65px"
+              height="65px"
+              alt=""
+            />
+            <h4 class="main2-h5">Mobil o'yinlarni yaratish</h4>
+            <img src="./images/arrow 1.svg" width="21px" height="21px" alt="" />
+          </div>
+          <div
+            class="main2-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/Group 49.svg"
+              width="65px"
+              height="65px"
+              alt=""
+            />
+            <h4 class="main2-h5">PK o'yinlarini ishlab chiqish</h4>
+            <img src="./images/arrow 1.svg" width="21px" height="21px" alt="" />
+          </div>
+          <div
+            class="main2-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/Group 50.svg"
+              width="65px"
+              height="65px"
+              alt=""
+            />
+            <h4 class="main2-h5">PS4 o'yinlarini ishlab chiqish</h4>
+            <img src="./images/arrow 1.svg" width="21px" height="21px" alt="" />
+          </div>
+          <div
+            class="main2-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/Group 51.svg"
+              width="65px"
+              height="65px"
+              alt=""
+            />
+            <h4 class="main2-h5">AR/VR yechimlari</h4>
+            <img src="./images/arrow 1.svg" width="21px" height="21px" alt="" />
+          </div>
+        </div>
+        <div class="main2-center">
+          <div
+            class="main2-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/Group 52.svg"
+              width="65px"
+              height="65px"
+              alt=""
+            />
+            <h4 class="main2-h5">AR/VR dizayni</h4>
+            <img src="./images/arrow 1.svg" width="21px" height="21px" alt="" />
+          </div>
+          <div
+            class="main2-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/Group 53.svg"
+              width="65px"
+              height="65px"
+              alt=""
+            />
+            <h4 class="main2-h5">3D Modellashtirish</h4>
+            <img src="./images/arrow 1.svg" width="21px" height="21px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section-header">
+      <div class="container2">
+        <div class="section-poragraph">
+          <div
+            class="text-wrapper"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <h1 class="section-h1">So'nggi loyihalarimiz</h1>
+            <p class="section-p">
+              Bizning dunyomizga nazar tashlang. Biz g'oyalarni ilg'or dizayn va
+              professional <br />
+              o'yin ishlab chiqish orqali haqiqatga aylantiramiz. Sifat biz
+              uchun shunchaki maqsad emas; bu bizning standartimiz.
+            </p>
+          </div>
+          <div
+            class="section-title"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img src="./images/Rectangle 15.png" alt="" />
+            <img src="./images/Rectangle 16.png" alt="" />
+            <img src="./images/Rectangle 17.png" alt="" />
+          </div>
+          <div
+            class="section-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img src="./images/Rectangle 19.png" alt="" />
+            <img src="./images/Rectangle 18.png" alt="" />
+            <img src="./images/Rectangle 20.png" alt="" />
+          </div>
+        </div>
+        <div class="section-btn" data-aos="fade-right" data-aos-duration="2000">
+          <button class="section-btn1">BARCHASINI KO'RISH</button>
+        </div>
+      </div>
+    </section>
+    <div class="nav-center">
+      <div class="container2">
+        <div
+          class="nav-center-title"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <h1 class="nav-center-h1">
+            Keling, o'yin kelajagini birgalikda quramiz.
+          </h1>
+          <p>
+            Bizning mamnun hamkorlarimiz qatoriga qo'shiling va o'yin olamida
+            yangi <br />
+            standartlarni o'rnating.
+          </p>
+        </div>
+        <div
+          class="nav-center-poragraph"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <div
+            class="nav-center-title2"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <h1 class="nav-center-h1">Yangiliklardan xabardor bo'ling</h1>
+            <p>
+              TDA haqidagi so'nggi yangiliklar va bildirishnomalarni olish uchun
+              obuna bo'ling. <br />
+              Sizga keraksiz xabarlar yubormaslikka va'da beramiz!
+            </p>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="3000">
+            <input
+              class="nav-center-input"
+              type="text"
+              placeholder="Email manzilingizni kiriting"
+            />
+            <button class="nav-center-btn">Davom etish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="container">
+        <div class="footer-end-poragraph">
+          <div
+            class="footer-end-title"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <h1 class="footer-end-h1">LOGO</h1>
+            <p>
+              Keyingi raqamli durdonangizni hayotga tatbiq etish uchun <br />
+              bizning global ekspertlar tarmog'imizga qo'shiling.
+            </p>
+            <i>@LZenix</i>
+          </div>
+          <div
+            class="footer-end-title"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <h4>Biz haqimizda</h4>
+            <ul
+              class="footer-end-wrapper"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <li>Zeux</li>
+              <li>Portfolio</li>
+              <li>Karyera</li>
+              <li>Aloqa</li>
+            </ul>
+          </div>
+          <div
+            class="footer-end-title"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <h4>Bog'lanish</h4>
+            <ul
+              class="footer-end-wrapper"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <li>Matn namunasi: Lorem Ipsum</li>
+              <li>Matbaa va nashriyot sanoati</li>
+              <li>uchun tayyorlangan.</li>
+              <li>+998 97 130 20 11</li>
+            </ul>
+          </div>
+          <div
+            class="footer-end-img"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img src="./images/Group 5.svg" width="54px" height="54px" alt="" />
+            <img
+              src="./images/Group 11.svg"
+              width="54px"
+              height="54px"
+              alt=""
+            />
+            <img
+              src="./images/Group 10.svg"
+              width="54px"
+              height="54px"
+              alt=""
+            />
+            <img src="./images/Group 9.svg" width="54px" height="54px" alt="" />
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <div
+        class="footer-end-span"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
+        Mualliflik huquqi ® 2022 prodesigner Barcha huquqlar himoyalangan.
+      </div>
+    </div>
+  </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
